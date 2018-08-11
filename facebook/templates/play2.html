@@ -1,0 +1,26 @@
+{{name}} 님  ( {{status}} ) 안녕하세요 <br>
+{{cnt}}번째 방문자입니다.<br>
+
+
+
+<h2> 일기 </h2>
+{{diary.0}}<br>
+{{diary.1}}<br>
+{{diary.2}}<br>
+
+
+
+<h2> 일기 </h2>
+
+
+{% for post in diary %}
+
+
+<h4>오늘의 일기</h4>
+다이어리 내용:<br>
+
+{{post}}
+<br><br>
+{% endfor %}
+{{diary.0}}
+
